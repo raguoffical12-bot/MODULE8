@@ -1,34 +1,31 @@
-# 🔄 Hackerrank : # 📦 Python Word Wrap Function
+EXPTNo.8b program to display elements from a list, present at odd index positions
 
-This Python program defines a function that **wraps a long string into multiple lines**, ensuring each line does not exceed a specified width.
+### Aim: To Write a python program to display elements from a list, present at odd index positions
+### Algorithm:
 
----
+STEP 1: Start.
 
-## 🎯 Aim
+STEP 2: Define a function.
 
-To write a Python function that takes a long string and a specified width, and returns the string formatted with line breaks such that each line has **at most the given width**.
+STEP 3: Create a list and a variable a.
 
----
+STEP 4: Get the input of a from user.
 
-## 🧠 Algorithm
+STEP 5 : Using loop get the inputs and append in list.
 
-1. **Start** the program.
-2. Define a function `wrap(string, max_width)`:
-   - Create an empty list `wrapped_lines` to store parts of the string.
-   - Loop through the string using steps of `max_width`.
-   - In each iteration, extract a substring of length `max_width`.
-   - Append this substring to the list.
-3. Join the list with `\n` to create the final string.
-4. Return the result.
-5. **End** the program.
+STEP 6: Using another loop print the elements in the odd index position of the list. 
 
----
+STEP 7: Stop.
 
+### Program:
+```
+reg no:212223070021
+name:Ragunandhan S 
+lst = [10, 20, 30, 40, 50, 60, 70]
+print([lst[i] for i in range(1, len(lst), 2)])
 
-## 🧪 Program
-Add Code Here
+```
+### Output:
+![image](https://github.com/user-attachments/assets/4f448634-841c-4ed3-8e7a-4f48658d15e2)
 
-## Sample Output
-
-## Result
-
+### Result: Thus, the given program is implemented and executed successfully .
