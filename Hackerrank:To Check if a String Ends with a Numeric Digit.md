@@ -1,30 +1,48 @@
-# 🔍 Hackerrank:Python Program to Check if a String Ends with a Numeric Digit
+EX: 8.e check whether they are valid mobile numbers.
 
-This Python program checks whether the last character of a given input string is a **numeric digit (0–9)**.
-
----
-
-## 🎯 Aim
-
-To write a Python program that checks if a given string ends with a number using Python's built-in string methods.
+### Aim: Write a Python program to check whether the given mobile numbers are valid or not.
+A valid mobile number is a 10-digit number starting with 7, 8, or 9.
 
 ---
 
-## 🧠 Algorithm
+### Algorithm:
 
-1. **Start the program.**
-2. **Input** a string from the user.
-3. **Access** the last character using indexing (`string[-1]`).
-4. **Check** if the last character is a digit using the `.isdigit()` method.
-5. **If true**, print that the string ends with a number.
-6. **Else**, print that the string does not end with a number.
-7. **End the program.**
+1. **Start**
+2. Read the number of test cases $t$.
+3. For each test case, do the following:
+
+   * Read the mobile number as a string.
+   * Define a regular expression pattern to match:
+
+     * Start of the string `^`
+     * First digit is either 7, 8, or 9: `[789]`
+     * Followed by exactly 9 digits: `\d{9}`
+     * End of the string `$`
+   * Use the regex to check if the mobile number matches the pattern.
+   * If it matches, print "YES".
+   * Otherwise, print "NO".
+4. **End**
 
 ---
 
-## 💻  Program
-Add Code here
+### Program:
+reg no:212223070021
+name:Ragunandhan S
+import re
+num=int(input())
+for i in range(num):
+    n=input()
+    p=re.compile("[7|8|9]\d{9}")
+    if re.match(p,n):
+        print("YES")
+    else:
+        print("NO")
 
-## Output
+### Output:
+![image](https://github.com/user-attachments/assets/8429d2c4-7739-488d-9013-80a05754ebb4)
 
-## Result
+
+### Result: Thus, the given program is implemented and executed successfully .
+ 
+
+
