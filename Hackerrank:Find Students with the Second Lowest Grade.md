@@ -1,36 +1,35 @@
-# 🎓 Hackerrank:Python Program to Find Students with the Second Lowest Grade
 
-This program reads student names and their corresponding grades, identifies the **second lowest grade**, and prints the names of all students who have that grade in **alphabetical order**.
-
----
-
-## 🎯 Aim
-
-To write a Python program to:
-- Read a list of students and their grades.
-- Identify the second lowest grade.
-- Print the names of students who have that grade, sorted alphabetically.
-
----
-
-## 🧠 Algorithm
-
-1. **Read** an integer `n` representing the number of students.
-2. **Read** each student’s name and grade, and store them as a sublist inside a list.
-3. **Extract** all the grades and sort them.
-4. **Identify** the second lowest grade from the sorted grade list.
-5. **Collect** names of all students whose grade matches the second lowest grade.
-6. **Sort** the names alphabetically.
-7. **Print** each name on a new line.
-
----
-
-## 💻  Program
-
-Add Code Here
-
-## Output
-
-## Result
+### Aim: To Write a python program to Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score. You are given scores. Store them 
+         in a list and find the score of the runner-up.
 
 
+### Algorithm:
+STEP 1: Start.
+
+STEP 2: Create a variable n.
+
+STEP 3: Get the value of n from user.
+
+STEP 4: Get the number of inputs from user and split the input and append in a list. STEP 5: Using set function remove duplicates from the list.
+
+STEP 6: Using sort function reorder the list in ascending order. STEP 7: Print the result.
+
+STEP 8: Stop.
+
+
+### Program:
+```
+reg no:212223070021
+name:Ragunandhan S
+scores = list(map(int, input().split()))
+scores.sort()
+runner_up = scores[-2]
+print(runner_up)
+
+
+### Output:
+ ![image](https://github.com/user-attachments/assets/4ae98a86-c951-4b7b-b6b7-22dde3330c09)
+
+
+### Result: Thus, the given program is implemented and executed successfully .
+ 
