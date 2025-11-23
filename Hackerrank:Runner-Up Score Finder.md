@@ -1,27 +1,36 @@
-# 🏆 Hackerrank:Runner-Up Score Finder in Python
+EX: 8.d program to square all the even numbers and cube all odd numbers from a list of integers
+### Aim: To Develop a python program to square all the even numbers and cube all odd numbers from a list of integers. Get the starting and ending range to create a list.
 
-## 🎯 AIM:
-To write a Python program that takes a list of scores from participants and finds the **runner-up score** (i.e., the second-highest score), eliminating any duplicates.
 
----
+### Algorithm:
 
-## 🧠 ALGORITHM:
+STEP 1: Start.
 
-1. **Start**
-2. Create a variable `n` and get its value from the user (number of participants)
-3. Read the list of `n` scores from the user using `input().split()` and convert them to integers
-4. Store the scores in a list
-5. Use `set()` to remove any duplicate scores
-6. Convert the set back to a list and sort it in ascending order
-7. Print the second-last element of the sorted list (i.e., the runner-up score)
-8. **Stop**
+STEP 2: Create a variable f and l for upper and lower limit of list. STEP 3: Get the value of f and l from user.
 
----
+STEP 4: Create a list.
 
-## 💻 PROGRAM:
+STEP 5 : Get the input from user and append in the list. STEP 6: Create a lambda function to calculate the result. STEP 7: Print the result.
 
-ADD CODE HERE
+STEP 8 : Stop.
 
-## OUTPUT
+### Program:
+```
+reg no:212223070021
+name:Ragunandhan S 
+start = int(input("Enter the starting range: "))
+end = int(input("Enter the ending range: "))
 
-## RESULT
+lst = [i for i in range(start, end+1)]
+
+result = [x**2 if x % 2 == 0 else x**3 for x in lst]
+
+print(result)
+
+
+
+```
+### Output:
+![image](https://github.com/user-attachments/assets/ddbd36e3-8f55-4166-8f95-1d1f53d2a86a)
+
+### Result: Thus, the given program is implemented and executed successfully .
